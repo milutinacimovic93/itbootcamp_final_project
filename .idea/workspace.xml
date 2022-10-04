@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e47e6f00-b462-4e4e-aaca-97a6f7300a84" name="Changes" comment="Added HomePage, LoginPage and LoginTests page, with first login test method completed.">
+    <list default="true" id="e47e6f00-b462-4e4e-aaca-97a6f7300a84" name="Changes" comment="Added second test called checkInputTypes checking attribute from email and password field.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/LoginTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,7 +39,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.LoginTests.checkInputTypes">
+  <component name="RunManager">
     <configuration name="LoginTests (1)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="itbootcamp_final_project" />
       <extension name="coverage">
@@ -110,8 +110,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LoginTests.noUserError" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="itbootcamp_final_project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.LoginTests" />
+      <option name="METHOD_NAME" value="noUserError" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.LoginTests.noUserError" />
         <item itemvalue="TestNG.LoginTests.checkInputTypes" />
         <item itemvalue="TestNG.LoginTests.loginTest" />
         <item itemvalue="TestNG.LoginTests (1)" />
@@ -142,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664906046834</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added second test called checkInputTypes checking attribute from email and password field.">
+      <created>1664907085442</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1664907085442</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -159,6 +185,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added BasePage class in page package and BaseTest class in test package, also added BeforeClass method, BeforeMethod method, and AfterClass method." />
     <MESSAGE value="Added HomePage, LoginPage and LoginTests page, with first login test method completed." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added HomePage, LoginPage and LoginTests page, with first login test method completed." />
+    <MESSAGE value="Added second test called checkInputTypes checking attribute from email and password field." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added second test called checkInputTypes checking attribute from email and password field." />
   </component>
 </project>
