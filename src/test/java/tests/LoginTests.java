@@ -39,7 +39,7 @@ public class LoginTests extends BaseTest{
     }
 
     @Test(priority = 2)
-    public void checkInputTypes() throws InterruptedException {
+    public void checkInputTypesTest() throws InterruptedException {
         homePage.goToLoginPage();
         Thread.sleep(1000);
         String actualEmail = loginPage.getEmailField().getAttribute("type");
@@ -49,7 +49,7 @@ public class LoginTests extends BaseTest{
     }
 
     @Test(priority = 3)
-    public void noUserError() throws InterruptedException {
+    public void noUserErrorTest() throws InterruptedException {
         homePage.goToLoginPage();
         String email = faker.internet().emailAddress();
         String password = faker.internet().password();
@@ -83,7 +83,7 @@ public class LoginTests extends BaseTest{
     }
 
     @Test(priority = 5)
-    public void logIn() throws InterruptedException {
+    public void logInTest() throws InterruptedException {
         homePage.goToLoginPage();
         Thread.sleep(1000);
         loginPage.login();
@@ -93,7 +93,7 @@ public class LoginTests extends BaseTest{
     }
 
     @Test(priority = 6)
-    public void logOut() throws InterruptedException {
+    public void logOutTest() throws InterruptedException {
         homePage.getLogoutBtn().click();
         Thread.sleep(1000);
         homePage.goToLoginPage();

@@ -52,6 +52,11 @@ public class HomePage extends BasePage{
         getDriver().get("https://vue-demo.daniel-avellaneda.com/");
         getLoginBtn().click();
     }
+    public void goToSignUpPage() {
+        getDriver().get("https://vue-demo.daniel-avellaneda.com/");
+        getSignUpbtn().click();
+    }
+
 
 
 
