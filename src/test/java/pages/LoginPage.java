@@ -12,6 +12,7 @@ public class LoginPage extends BasePage{
     private WebElement passwordField;
     private WebElement loginBtn;
     private WebElement forgotPassword;
+    private WebElement homePageBtn;
 
     public LoginPage(WebDriver driver, WebDriverWait wait) {
         super(driver, wait);
@@ -48,6 +49,10 @@ public class LoginPage extends BasePage{
 
     public void setForgotPassword(WebElement forgotPassword) {
         this.forgotPassword = forgotPassword;
+    }
+
+    public WebElement getHomePageBtn() {
+        return getDriver().findElement(By.xpath("//*[@id=\"app\"]/div[1]/div/header/div/div[3]/a[1]"));
     }
 
     public void login() {

@@ -12,6 +12,8 @@ public class HomePage extends BasePage{
     private WebElement signUpbtn;
     private WebElement darkTheme;
     private WebElement language;
+    private WebElement logoutBtn;
+    private WebElement homePageBtn;
 
 
     public HomePage(WebDriver driver, WebDriverWait wait) {
@@ -38,8 +40,19 @@ public class HomePage extends BasePage{
         return getDriver().findElement(By.xpath("//*[@id=\"app\"]/div/div/header/div/div[3]/button/span/i"));
     }
 
+    public WebElement getLogoutBtn() {
+        return getDriver().findElement(By.xpath("//*[@id=\"app\"]/div[1]/div/header/div/div[3]/button[2]"));
+    }
+
+    public WebElement getHomePageBtn() {
+        return getDriver().findElement(By.xpath("//*[@id=\"app\"]/div[1]/div/header/div/div[3]/a[1]"));
+    }
+
     public void goToLoginPage() {
         getDriver().get("https://vue-demo.daniel-avellaneda.com/");
         getLoginBtn().click();
     }
+
+
+
 }
