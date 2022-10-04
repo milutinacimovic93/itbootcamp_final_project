@@ -1,12 +1,17 @@
 package pages;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public abstract class BasePage {
 
     private WebDriver driver;
     private WebDriverWait wait;
+
+    public BasePage() {
+
+    }
 
     public BasePage(WebDriver driver, WebDriverWait wait) {
         this.driver = driver;
@@ -28,4 +33,5 @@ public abstract class BasePage {
     public void setWait(WebDriverWait wait) {
         this.wait = wait;
     }
+
 }
