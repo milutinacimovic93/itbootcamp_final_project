@@ -3,6 +3,7 @@ package tests;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -29,6 +30,18 @@ public class LoginTests extends BaseTest{
         homePage.goToLoginPage();
         Thread.sleep(1000);
         loginPage.login();
+        String actualUrl = driver.getCurrentUrl();
+        Assert.assertTrue(actualUrl.contains("login"));
+    }
+
+    @Test(priority = 2)
+    public void checkInputTypes() throws InterruptedException {
+        homePage.goToLoginPage();
+        Thread.sleep(1000);
+        String actualEmail = loginPage.getEmailField().getAttribute("type");
+        String actualPass = loginPage.getPasswordField().getAttribute("type");
+        Assert.assertEquals(actualEmail, "email");
+        Assert.assertEquals(actualPass, "password");
     }
 
 }

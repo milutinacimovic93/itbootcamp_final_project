@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e47e6f00-b462-4e4e-aaca-97a6f7300a84" name="Changes" comment="Added BasePage class in page package and BaseTest class in test package, also added BeforeClass method, BeforeMethod method, and AfterClass method.">
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/LoginTests.java" afterDir="false" />
+    <list default="true" id="e47e6f00-b462-4e4e-aaca-97a6f7300a84" name="Changes" comment="Added HomePage, LoginPage and LoginTests page, with first login test method completed.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/LoginTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +39,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.LoginTests.loginTest">
+  <component name="RunManager" selected="TestNG.LoginTests.checkInputTypes">
     <configuration name="LoginTests (1)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="itbootcamp_final_project" />
       <extension name="coverage">
@@ -77,6 +74,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LoginTests.checkInputTypes" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="itbootcamp_final_project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.LoginTests" />
+      <option name="METHOD_NAME" value="checkInputTypes" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LoginTests.loginTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="itbootcamp_final_project" />
       <extension name="coverage">
@@ -97,6 +112,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.LoginTests.checkInputTypes" />
         <item itemvalue="TestNG.LoginTests.loginTest" />
         <item itemvalue="TestNG.LoginTests (1)" />
         <item itemvalue="TestNG.LoginTests" />
@@ -119,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664901154377</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added HomePage, LoginPage and LoginTests page, with first login test method completed.">
+      <created>1664906046834</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1664906046834</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -135,6 +158,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added BasePage class in page package and BaseTest class in test package, also added BeforeClass method, BeforeMethod method, and AfterClass method." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added BasePage class in page package and BaseTest class in test package, also added BeforeClass method, BeforeMethod method, and AfterClass method." />
+    <MESSAGE value="Added HomePage, LoginPage and LoginTests page, with first login test method completed." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added HomePage, LoginPage and LoginTests page, with first login test method completed." />
   </component>
 </project>
