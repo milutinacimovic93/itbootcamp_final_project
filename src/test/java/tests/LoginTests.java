@@ -22,6 +22,7 @@ public class LoginTests extends BaseTest{
         super.setup();
         homePage = new HomePage(driver, driverWait);
         loginPage = new LoginPage(driver, driverWait);
+        faker = new Faker();
     }
 
     @Test(priority = 1)
@@ -45,7 +46,6 @@ public class LoginTests extends BaseTest{
 
     @Test(priority = 3)
     public void noUserError() throws InterruptedException {
-        faker = new Faker();
         homePage.goToLoginPage();
         String email = faker.internet().emailAddress();
         String password = faker.internet().password();
@@ -60,5 +60,29 @@ public class LoginTests extends BaseTest{
         String actualUrl = driver.getCurrentUrl();
         Assert.assertTrue(actualUrl.contains("login"));
     }
+
+    //Test #4: Displays errors when password is wrong
+    //Podaci: random email i password koristeći faker libarary
+    //asssert:
+    //Verifikovati da greska sadrzi poruku Wrong password
+    //Verifikovati da se u url-u stranice javlja /login ruta
+
+    @Test(priority = 4)
+    public void wrongPasswordTest() throws InterruptedException {
+        String password = faker.internet().password();
+        homePage.goToLoginPage();
+        Thread.sleep(1000);
+        loginPage.getEmailField().click();
+        loginPage.getEmailField().sendKeys("admin@admin.com");
+        loginPage.getPasswordField().click();
+        loginPage.getPasswordField().sendKeys(password);
+        loginPage.getLoginBtn().click();
+        Thread.sleep(2000);
+        WebElement errorMsg = driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/main/div/div[2]/div/div/div[4]/div/div/div/div/div[1]/ul/li"));
+        Assert.assertTrue(errorMsg.getText().contains("Wrong password"));
+        String actualUrl = driver.getCurrentUrl();
+        Assert.assertTrue(actualUrl.contains("login"));
+    }
+
 
 }
