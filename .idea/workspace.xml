@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e47e6f00-b462-4e4e-aaca-97a6f7300a84" name="Changes" comment="Added last test in LogoutTest page, test verifies that user can logout after being logged in, and also that if user tries to get back to home page after log out is redirected to log in page again.">
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/SignUpPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/SignUpTests.java" afterDir="false" />
+    <list default="true" id="e47e6f00-b462-4e4e-aaca-97a6f7300a84" name="Changes" comment="Added SignUpPage and SignUpTests page.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/LoginTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/SignUpTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/SignUpTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,25 +38,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true"
   }
 }]]></component>
-  <component name="RunManager">
-    <configuration name="LoginTests.checkInputTypes" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="itbootcamp_final_project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.LoginTests" />
-      <option name="METHOD_NAME" value="checkInputTypes" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.SignUpTests.signUpPageTest">
     <configuration name="LoginTests.logIn" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="itbootcamp_final_project" />
       <extension name="coverage">
@@ -132,13 +111,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SignUpTests.signUpPageTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="itbootcamp_final_project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.SignUpTests" />
+      <option name="METHOD_NAME" value="signUpPageTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.SignUpTests.signUpPageTest" />
         <item itemvalue="TestNG.LoginTests.logOut" />
         <item itemvalue="TestNG.LoginTests.logIn" />
         <item itemvalue="TestNG.LoginTests.wrongPasswordTest" />
         <item itemvalue="TestNG.LoginTests.noUserError" />
-        <item itemvalue="TestNG.LoginTests.checkInputTypes" />
       </list>
     </recent_temporary>
   </component>
@@ -200,7 +197,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664912992512</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added SignUpPage and SignUpTests page.">
+      <created>1664913933934</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1664913933934</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -222,6 +226,7 @@
     <MESSAGE value="Added 4th test verifying that when user tries to login with wrong password error saying &quot;Wrong password&quot; is displayed." />
     <MESSAGE value="Added 5th test, verifying that when user tries to log in, if successful home page is displayed." />
     <MESSAGE value="Added last test in LogoutTest page, test verifies that user can logout after being logged in, and also that if user tries to get back to home page after log out is redirected to log in page again." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added last test in LogoutTest page, test verifies that user can logout after being logged in, and also that if user tries to get back to home page after log out is redirected to log in page again." />
+    <MESSAGE value="Added SignUpPage and SignUpTests page." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added SignUpPage and SignUpTests page." />
   </component>
 </project>
