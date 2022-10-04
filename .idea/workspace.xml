@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e47e6f00-b462-4e4e-aaca-97a6f7300a84" name="Changes" comment="Added SignUpPage and SignUpTests page.">
+    <list default="true" id="e47e6f00-b462-4e4e-aaca-97a6f7300a84" name="Changes" comment="Added 1st test in signUptest verifying that when user click on signup button url containts &quot;signup&quot;.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/SignUpTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/SignUpTests.java" afterDir="false" />
     </list>
@@ -38,7 +38,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.SignUpTests.signUpPageTest">
+  <component name="RunManager" selected="TestNG.SignUpTests.signUpFormInputTypesCheckTest">
     <configuration name="LoginTests.logIn" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="itbootcamp_final_project" />
       <extension name="coverage">
@@ -75,24 +75,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTests.noUserError" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="itbootcamp_final_project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.LoginTests" />
-      <option name="METHOD_NAME" value="noUserError" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="LoginTests.wrongPasswordTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="itbootcamp_final_project" />
       <extension name="coverage">
@@ -104,6 +86,24 @@
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.LoginTests" />
       <option name="METHOD_NAME" value="wrongPasswordTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SignUpTests.signUpFormInputTypesCheckTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="itbootcamp_final_project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.SignUpTests" />
+      <option name="METHOD_NAME" value="signUpFormInputTypesCheckTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -131,11 +131,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.SignUpTests.signUpFormInputTypesCheckTest" />
         <item itemvalue="TestNG.SignUpTests.signUpPageTest" />
         <item itemvalue="TestNG.LoginTests.logOut" />
         <item itemvalue="TestNG.LoginTests.logIn" />
         <item itemvalue="TestNG.LoginTests.wrongPasswordTest" />
-        <item itemvalue="TestNG.LoginTests.noUserError" />
       </list>
     </recent_temporary>
   </component>
@@ -204,7 +204,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664913933934</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Added 1st test in signUptest verifying that when user click on signup button url containts &quot;signup&quot;.">
+      <created>1664914299031</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1664914299031</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -227,6 +234,7 @@
     <MESSAGE value="Added 5th test, verifying that when user tries to log in, if successful home page is displayed." />
     <MESSAGE value="Added last test in LogoutTest page, test verifies that user can logout after being logged in, and also that if user tries to get back to home page after log out is redirected to log in page again." />
     <MESSAGE value="Added SignUpPage and SignUpTests page." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added SignUpPage and SignUpTests page." />
+    <MESSAGE value="Added 1st test in signUptest verifying that when user click on signup button url containts &quot;signup&quot;." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added 1st test in signUptest verifying that when user click on signup button url containts &quot;signup&quot;." />
   </component>
 </project>

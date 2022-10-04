@@ -21,18 +21,28 @@ public class SignUpTests extends BaseTest{
     public void setup() {
         super.setup();
         homePage = new HomePage(driver, driverWait);
+        signUpPage = new SignUpPage(driver, driverWait);
         faker = new Faker();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60));
     }
 
-    //Test #1: Visits the signup page
-    //assert:
-    //Verifikovati da se u url-u stranice javlja /signup ruta
     @Test(priority = 1)
     public void signUpPageTest() throws InterruptedException {
         Thread.sleep(1000);
         homePage.goToSignUpPage();
         String actualUrl = driver.getCurrentUrl();
         Assert.assertTrue(actualUrl.contains("signup"));
+    }
+
+    @Test(priority = 2)
+    public void signUpFormInputTypesCheckTest() throws InterruptedException {
+        homePage.goToSignUpPage();
+        Thread.sleep(1000);
+        String actualEmail = signUpPage.getEmail().getAttribute("type");
+        String actualPass = signUpPage.getPasswordField().getAttribute("type");
+        String actualPassConfirm = signUpPage.getConfirmPasswordField().getAttribute("type");
+        Assert.assertEquals(actualEmail, "email");
+        Assert.assertEquals(actualPass, "password");
+        Assert.assertEquals(actualPassConfirm, "password");
     }
 }
