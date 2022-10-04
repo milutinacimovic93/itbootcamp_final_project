@@ -84,5 +84,15 @@ public class LoginTests extends BaseTest{
         Assert.assertTrue(actualUrl.contains("login"));
     }
 
+    @Test(priority = 5)
+    public void logIn() throws InterruptedException {
+        homePage.goToLoginPage();
+        Thread.sleep(1000);
+        loginPage.login();
+        Thread.sleep(1000);
+        String actualUrl = driver.getCurrentUrl();
+        Assert.assertTrue(actualUrl.contains("home"));
+    }
+
 
 }
