@@ -11,6 +11,7 @@ public class SignUpPage extends BasePage{
     private WebElement email;
     private WebElement passwordField;
     private WebElement confirmPasswordField;
+    private WebElement signMeUpBtn;
 
     public SignUpPage(WebDriver driver, WebDriverWait wait) {
         super(driver, wait);
@@ -30,5 +31,13 @@ public class SignUpPage extends BasePage{
 
     public WebElement getConfirmPasswordField() {
         return getDriver().findElement(By.id("confirmPassword"));
+    }
+
+    public WebElement getSignMeUpBtn() {
+        return getDriver().findElement(By.xpath("//*[@id=\"app\"]/div/main/div/div[2]/div/div/div[2]/span/form/div/div[5]/button"));
+    }
+
+    public void signUp() {
+
     }
 }
