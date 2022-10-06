@@ -2,6 +2,8 @@ package tests;
 
 
 import com.github.javafaker.Faker;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.bidi.log.Log;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
@@ -70,5 +72,19 @@ public class AdminCitiesTest extends BaseTest {
         Thread.sleep(2000);
         Assert.assertTrue(citiesPage.getSuccesMsgBanner().getText().contains("Saved successfully"));
     }
+
+    @Test(priority = 4)
+    public void searchCityTest() throws InterruptedException {
+        homePage.goToLoginPage();
+        loginPage.login();
+        Thread.sleep(2000);
+        homePage.goToCitiesPage();
+        Thread.sleep(2000);
+        citiesPage.searchCity();
+        Thread.sleep(10000);
+        Assert.assertEquals(citiesPage.getFirstCityText().getText(), citiesPage.getSearchedText().getText());
+    }
+
+
 
 }

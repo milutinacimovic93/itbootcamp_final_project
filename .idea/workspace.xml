@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e47e6f00-b462-4e4e-aaca-97a6f7300a84" name="Changes" comment="Added 2nd test in AdminCitiesTest testing verifying that user can add new item and that message saying &quot;Saved successfully&quot; pops up.">
+    <list default="true" id="e47e6f00-b462-4e4e-aaca-97a6f7300a84" name="Changes" comment="Added 3rd test verifying that user can edit city.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/CitiesPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/CitiesPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/SignUpPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/SignUpPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/AdminCitiesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/AdminCitiesTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,7 +40,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.AdminCitiesTest.editCityTest">
+  <component name="RunManager" selected="TestNG.AdminCitiesTest.searchCityTest">
     <configuration name="AdminCitiesTest.addNewCityTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="itbootcamp_final_project" />
       <extension name="coverage">
@@ -95,6 +95,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AdminCitiesTest.searchCityTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="itbootcamp_final_project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.AdminCitiesTest" />
+      <option name="METHOD_NAME" value="searchCityTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SignUpTests.signUpTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="itbootcamp_final_project" />
       <extension name="coverage">
@@ -113,31 +131,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SignUpTests.signUpUserThatAlreadyExists" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="itbootcamp_final_project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.SignUpTests" />
-      <option name="METHOD_NAME" value="signUpUserThatAlreadyExists" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.AdminCitiesTest.editCityTest" />
+        <item itemvalue="TestNG.AdminCitiesTest.searchCityTest" />
         <item itemvalue="TestNG.AdminCitiesTest.addNewCityTest" />
+        <item itemvalue="TestNG.AdminCitiesTest.editCityTest" />
         <item itemvalue="TestNG.AdminCitiesTest.adminCitiesRoutTest" />
         <item itemvalue="TestNG.SignUpTests.signUpTest" />
-        <item itemvalue="TestNG.SignUpTests.signUpUserThatAlreadyExists" />
       </list>
     </recent_temporary>
   </component>
@@ -241,7 +241,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665074756954</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Added 3rd test verifying that user can edit city.">
+      <created>1665077204463</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1665077204463</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -270,6 +277,7 @@
     <MESSAGE value="Added 3rd and 4th tests, 3rd is verifying that when user tries to creat profile that already exists error message appears while 4th tests verifies successful sign up and that verification message pops up." />
     <MESSAGE value="Added AdminCitiesTest and Cities page with first test checking if cities page is reachable." />
     <MESSAGE value="Added 2nd test in AdminCitiesTest testing verifying that user can add new item and that message saying &quot;Saved successfully&quot; pops up." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added 2nd test in AdminCitiesTest testing verifying that user can add new item and that message saying &quot;Saved successfully&quot; pops up." />
+    <MESSAGE value="Added 3rd test verifying that user can edit city." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added 3rd test verifying that user can edit city." />
   </component>
 </project>

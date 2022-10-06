@@ -15,6 +15,8 @@ public class CitiesPage extends BasePage{
     private WebElement succesMsgBanner;
     private WebElement editItemBtn;
     private WebElement editNameInputField;
+    private WebElement searchInputField;
+    private WebElement searchedText;
     private Faker faker;
     private HomePage homePage;
 
@@ -24,7 +26,7 @@ public class CitiesPage extends BasePage{
     }
 
     public WebElement getSearchField() {
-        return getDriver().findElement(By.xpath("//*[@id=\"list-item-355\"]/div[2]"));
+        return getDriver().findElement(By.xpath("//*[@id=\"app\"]/div[1]/main/div/div[2]/div/div[1]/div[1]/div[2]/div"));
     }
 
     public WebElement getCreateItemBtn() {
@@ -51,6 +53,18 @@ public class CitiesPage extends BasePage{
         return getDriver().findElement(By.xpath("//*[@id=\"name\"]"));
     }
 
+    public WebElement getSearchInputField() {
+        return getDriver().findElement(By.xpath("//*[@id=\"search\"]"));
+    }
+
+    public WebElement getFirstCityText() {
+        return getDriver().findElement(By.xpath("//*[@id=\"app\"]/div[1]/main/div/div[2]/div/div[1]/div[2]/table/tbody/tr[1]/td[2]"));
+    }
+
+    public WebElement getSearchedText() {
+        return getDriver().findElement(By.xpath("//*[@id=\"app\"]/div[1]/main/div/div[2]/div/div[1]/div[2]/table/tbody/tr/td[2]"));
+    }
+
     public void addNewCity() throws InterruptedException {
         faker = new Faker();
         String city = faker.address().city();
@@ -69,5 +83,13 @@ public class CitiesPage extends BasePage{
         getEditNameInputField().clear();
         getEditNameInputField().sendKeys(city);
         getSaveNewItemBtn().click();
+    }
+
+    public void searchCity() throws InterruptedException {
+        getSearchField().click();
+        Thread.sleep(2000);
+        String city = getFirstCityText().getText();
+        getSearchInputField().sendKeys(city);
+        Thread.sleep(2000);
     }
 }

@@ -37,7 +37,5 @@ public class SignUpPage extends BasePage{
         return getDriver().findElement(By.xpath("//*[@id=\"app\"]/div/main/div/div[2]/div/div/div[2]/span/form/div/div[5]/button"));
     }
 
-    public void signUp() {
-
-    }
+    public void signUp() {}
 }
