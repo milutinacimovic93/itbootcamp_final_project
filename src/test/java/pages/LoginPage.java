@@ -13,6 +13,7 @@ public class LoginPage extends BasePage{
     private WebElement loginBtn;
     private WebElement forgotPassword;
     private WebElement homePageBtn;
+    private WebElement logout;
 
     public LoginPage(WebDriver driver, WebDriverWait wait) {
         super(driver, wait);
@@ -54,12 +55,20 @@ public class LoginPage extends BasePage{
         return getDriver().findElement(By.xpath("//*[@id=\"app\"]/div[1]/div/header/div/div[3]/a[1]"));
     }
 
+    public WebElement getLogout() {
+        return getDriver().findElement(By.xpath("//*[@id=\"app\"]/div[1]/div/header/div/div[3]/button[2]"));
+    }
+
     public void login() {
         getEmailField().click();
         getEmailField().sendKeys("admin@admin.com");
         getPasswordField().click();
         getPasswordField().sendKeys("12345");
         getLoginBtn().click();
+    }
+
+    public void logout() {
+        getLogout().click();
     }
 
 }

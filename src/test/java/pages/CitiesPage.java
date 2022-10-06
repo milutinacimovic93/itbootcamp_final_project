@@ -17,6 +17,9 @@ public class CitiesPage extends BasePage{
     private WebElement editNameInputField;
     private WebElement searchInputField;
     private WebElement searchedText;
+    private WebElement delete1st;
+    private WebElement deleteBtn;
+    private WebElement succesDelMsg;
     private Faker faker;
     private HomePage homePage;
 
@@ -65,6 +68,18 @@ public class CitiesPage extends BasePage{
         return getDriver().findElement(By.xpath("//*[@id=\"app\"]/div[1]/main/div/div[2]/div/div[1]/div[2]/table/tbody/tr/td[2]"));
     }
 
+    public WebElement getDelete1st() {
+        return getDriver().findElement(By.xpath("//*[@id=\"delete\"]/span/i"));
+    }
+
+    public WebElement getDeleteBtn() {
+        return getDriver().findElement(By.xpath("//*[@id=\"app\"]/div[4]/div/div/div[2]/button[2]"));
+    }
+
+    public WebElement getSuccesDelMsg() {
+        return getDriver().findElement(By.xpath("//*[@id=\"app\"]/div[1]/main/div/div[2]/div/div[3]/div/div/div/div"));
+    }
+
     public void addNewCity() throws InterruptedException {
         faker = new Faker();
         String city = faker.address().city();
@@ -91,5 +106,11 @@ public class CitiesPage extends BasePage{
         String city = getFirstCityText().getText();
         getSearchInputField().sendKeys(city);
         Thread.sleep(2000);
+    }
+
+    public void deleteCity() throws InterruptedException {
+        getDelete1st().click();
+        Thread.sleep(1000);
+        getDeleteBtn().click();
     }
 }
