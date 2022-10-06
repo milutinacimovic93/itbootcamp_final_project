@@ -32,13 +32,6 @@ public class AdminCitiesTest extends BaseTest {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60));
     }
 
-    //Test #1: Visits the admin cities page and list cities
-    //Podaci:
-    //admin email: admin@admin.com
-    //admin password: 12345
-    //assert:
-    //Verifikovati da se u url-u stranice javlja /admin/cities ruta
-    //Verifikovati postojanje logut dugmeta
 
     @Test(priority = 1)
     public void adminCitiesRoutTest() throws InterruptedException {
@@ -55,7 +48,20 @@ public class AdminCitiesTest extends BaseTest {
     }
 
     @Test(priority = 2)
-    public void addNewCityTest() {
-
+    public void addNewCityTest() throws InterruptedException {
+        String city = faker.address().city();
+        homePage.goToLoginPage();
+        loginPage.login();
+        homePage.getAdminBtn().click();
+        Thread.sleep(2000);
+        homePage.getCitiesBtn().click();
+        Thread.sleep(2000);
+        citiesPage.getCreateItemBtn().click();
+        citiesPage.getCreatNameInputField().click();
+        citiesPage.getCreatNameInputField().sendKeys(city);
+        Thread.sleep(1000);
+        citiesPage.getSaveNewItemBtn().click();
+        Thread.sleep(3000);
+        Assert.assertTrue(citiesPage.getSuccesMsgBanner().getText().contains("Saved successfully"));
     }
 }
