@@ -17,6 +17,11 @@ public class HomePage extends BasePage{
     private WebElement homePageBtn;
     private WebElement adminBtn;
     private WebElement citiesBtn;
+    private WebElement languageBtn;
+    private WebElement spainBtn;
+    private WebElement pageHeader;
+    private WebElement engBtn;
+    private WebElement fraBtn;
 
     public HomePage(WebDriver driver, WebDriverWait wait) {
         super(driver, wait);
@@ -58,6 +63,26 @@ public class HomePage extends BasePage{
         return getDriver().findElement(By.xpath("//*[@id=\"list-item-80\"]"));
     }
 
+    public WebElement getLanguageBtn() {
+        return getDriver().findElement(By.xpath("//*[@id=\"app\"]/div[1]/div/header/div/div[3]/button"));
+    }
+
+    public WebElement getSpainBtn() {
+        return getDriver().findElement(By.xpath("//*[@id=\"list-item-75\"]/div"));
+    }
+
+    public WebElement getEngBtn() {
+        return getDriver().findElement(By.xpath("//*[@id=\"list-item-73\"]"));
+    }
+
+    public WebElement getFranBtn() {
+        return getDriver().findElement(By.xpath("//*[@id=\"list-item-77\"]"));
+    }
+
+    public WebElement getPageHeader() {
+        return getDriver().findElement(By.xpath("//*[@id=\"app\"]/div[1]/main/div/div[2]/div/div[1]/div[1]/h1"));
+    }
+
     public void goToLoginPage() {
         getDriver().get("https://vue-demo.daniel-avellaneda.com/");
         getLoginBtn().click();
@@ -74,6 +99,10 @@ public class HomePage extends BasePage{
         getCitiesBtn().click();
         Thread.sleep(2000);
     }
+
+
+
+
 
 
 

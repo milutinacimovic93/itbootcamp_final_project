@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e47e6f00-b462-4e4e-aaca-97a6f7300a84" name="Changes" comment="Added 5th test verifying successful delete.">
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/AuthRoutesTest.java" afterDir="false" />
+    <list default="true" id="e47e6f00-b462-4e4e-aaca-97a6f7300a84" name="Changes" comment="Added AuthRoutesTest with test verifying that guests can not reach home,profile,admin/cities and admin/users pages and that they will be redirected to login page if they try.">
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/LocaleLanguageTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,24 +40,6 @@
   }
 }]]></component>
   <component name="RunManager">
-    <configuration name="AdminCitiesTest.addNewCityTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="itbootcamp_final_project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.AdminCitiesTest" />
-      <option name="METHOD_NAME" value="addNewCityTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="AdminCitiesTest.editCityTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="itbootcamp_final_project" />
       <extension name="coverage">
@@ -93,7 +76,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AuthRoutesTest.verifyGuestCantReachAdminCitiesPage" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LocaleLanguageTests.engLangTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="itbootcamp_final_project" />
       <extension name="coverage">
         <pattern>
@@ -102,8 +85,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.AuthRoutesTest" />
-      <option name="METHOD_NAME" value="verifyGuestCantReachAdminCitiesPage" />
+      <option name="MAIN_CLASS_NAME" value="tests.LocaleLanguageTests" />
+      <option name="METHOD_NAME" value="engLangTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -111,7 +94,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AuthRoutesTest.verifyGuestCantReachHomePage" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LocaleLanguageTests.espLangTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="itbootcamp_final_project" />
       <extension name="coverage">
         <pattern>
@@ -120,8 +103,26 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.AuthRoutesTest" />
-      <option name="METHOD_NAME" value="verifyGuestCantReachHomePage" />
+      <option name="MAIN_CLASS_NAME" value="tests.LocaleLanguageTests" />
+      <option name="METHOD_NAME" value="espLangTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LocaleLanguageTests.fraLangTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="itbootcamp_final_project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.LocaleLanguageTests" />
+      <option name="METHOD_NAME" value="fraLangTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -131,9 +132,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.AuthRoutesTest.verifyGuestCantReachAdminCitiesPage" />
-        <item itemvalue="TestNG.AuthRoutesTest.verifyGuestCantReachHomePage" />
-        <item itemvalue="TestNG.AdminCitiesTest.addNewCityTest" />
+        <item itemvalue="TestNG.LocaleLanguageTests.fraLangTest" />
+        <item itemvalue="TestNG.LocaleLanguageTests.engLangTest" />
+        <item itemvalue="TestNG.LocaleLanguageTests.espLangTest" />
         <item itemvalue="TestNG.AdminCitiesTest.editCityTest" />
         <item itemvalue="TestNG.AdminCitiesTest.searchCityTest" />
       </list>
@@ -260,7 +261,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665085210358</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Added AuthRoutesTest with test verifying that guests can not reach home,profile,admin/cities and admin/users pages and that they will be redirected to login page if they try.">
+      <created>1665086693244</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1665086693244</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -292,7 +300,8 @@
     <MESSAGE value="Added 3rd test verifying that user can edit city." />
     <MESSAGE value="Added 4th test verifying that searched city is filtered." />
     <MESSAGE value="Added 5th test verifying successful delete." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added 5th test verifying successful delete." />
+    <MESSAGE value="Added AuthRoutesTest with test verifying that guests can not reach home,profile,admin/cities and admin/users pages and that they will be redirected to login page if they try." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added AuthRoutesTest with test verifying that guests can not reach home,profile,admin/cities and admin/users pages and that they will be redirected to login page if they try." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
