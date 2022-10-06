@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+
 public class HomePage extends BasePage{
 
     private WebElement loginBtn;
@@ -54,7 +55,7 @@ public class HomePage extends BasePage{
     }
 
     public WebElement getCitiesBtn() {
-        return getDriver().findElement(By.xpath("//*[@id=\"list-item-117\"]"));
+        return getDriver().findElement(By.xpath("//*[@id=\"list-item-80\"]"));
     }
 
     public void goToLoginPage() {
@@ -64,6 +65,14 @@ public class HomePage extends BasePage{
     public void goToSignUpPage() {
         getDriver().get("https://vue-demo.daniel-avellaneda.com/");
         getSignUpbtn().click();
+    }
+
+    public void goToCitiesPage() throws InterruptedException {
+        getDriver().get("https://vue-demo.daniel-avellaneda.com/");
+        getAdminBtn().click();
+        Thread.sleep(2000);
+        getCitiesBtn().click();
+        Thread.sleep(2000);
     }
 
 

@@ -49,19 +49,26 @@ public class AdminCitiesTest extends BaseTest {
 
     @Test(priority = 2)
     public void addNewCityTest() throws InterruptedException {
-        String city = faker.address().city();
         homePage.goToLoginPage();
         loginPage.login();
-        homePage.getAdminBtn().click();
         Thread.sleep(2000);
-        homePage.getCitiesBtn().click();
+        homePage.goToCitiesPage();
         Thread.sleep(2000);
-        citiesPage.getCreateItemBtn().click();
-        citiesPage.getCreatNameInputField().click();
-        citiesPage.getCreatNameInputField().sendKeys(city);
-        Thread.sleep(1000);
-        citiesPage.getSaveNewItemBtn().click();
+        citiesPage.addNewCity();
         Thread.sleep(3000);
         Assert.assertTrue(citiesPage.getSuccesMsgBanner().getText().contains("Saved successfully"));
     }
+
+    @Test(priority = 3)
+    public void editCityTest() throws InterruptedException {
+        homePage.goToLoginPage();
+        loginPage.login();
+        Thread.sleep(2000);
+        homePage.goToCitiesPage();
+        Thread.sleep(2000);
+        citiesPage.editCity();
+        Thread.sleep(2000);
+        Assert.assertTrue(citiesPage.getSuccesMsgBanner().getText().contains("Saved successfully"));
+    }
+
 }

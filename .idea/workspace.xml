@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e47e6f00-b462-4e4e-aaca-97a6f7300a84" name="Changes" comment="Added AdminCitiesTest and Cities page with first test checking if cities page is reachable.">
+    <list default="true" id="e47e6f00-b462-4e4e-aaca-97a6f7300a84" name="Changes" comment="Added 2nd test in AdminCitiesTest testing verifying that user can add new item and that message saying &quot;Saved successfully&quot; pops up.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/CitiesPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/CitiesPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/AdminCitiesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/AdminCitiesTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,7 +40,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.AdminCitiesTest.addNewCityTest">
+  <component name="RunManager" selected="TestNG.AdminCitiesTest.editCityTest">
     <configuration name="AdminCitiesTest.addNewCityTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="itbootcamp_final_project" />
       <extension name="coverage">
@@ -76,7 +77,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SignUpTests.signUpFormInputTypesCheckTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="AdminCitiesTest.editCityTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="itbootcamp_final_project" />
       <extension name="coverage">
         <pattern>
@@ -85,8 +86,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.SignUpTests" />
-      <option name="METHOD_NAME" value="signUpFormInputTypesCheckTest" />
+      <option name="MAIN_CLASS_NAME" value="tests.AdminCitiesTest" />
+      <option name="METHOD_NAME" value="editCityTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -132,11 +133,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.AdminCitiesTest.editCityTest" />
         <item itemvalue="TestNG.AdminCitiesTest.addNewCityTest" />
         <item itemvalue="TestNG.AdminCitiesTest.adminCitiesRoutTest" />
         <item itemvalue="TestNG.SignUpTests.signUpTest" />
         <item itemvalue="TestNG.SignUpTests.signUpUserThatAlreadyExists" />
-        <item itemvalue="TestNG.SignUpTests.signUpFormInputTypesCheckTest" />
       </list>
     </recent_temporary>
   </component>
@@ -233,7 +234,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665073936527</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Added 2nd test in AdminCitiesTest testing verifying that user can add new item and that message saying &quot;Saved successfully&quot; pops up.">
+      <created>1665074756954</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1665074756954</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -261,6 +269,7 @@
     <MESSAGE value="Added 2nd test in SignupTests page checking signup form input field types." />
     <MESSAGE value="Added 3rd and 4th tests, 3rd is verifying that when user tries to creat profile that already exists error message appears while 4th tests verifies successful sign up and that verification message pops up." />
     <MESSAGE value="Added AdminCitiesTest and Cities page with first test checking if cities page is reachable." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added AdminCitiesTest and Cities page with first test checking if cities page is reachable." />
+    <MESSAGE value="Added 2nd test in AdminCitiesTest testing verifying that user can add new item and that message saying &quot;Saved successfully&quot; pops up." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added 2nd test in AdminCitiesTest testing verifying that user can add new item and that message saying &quot;Saved successfully&quot; pops up." />
   </component>
 </project>

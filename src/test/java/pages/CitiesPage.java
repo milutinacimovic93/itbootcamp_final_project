@@ -1,5 +1,6 @@
 package pages;
 
+import com.github.javafaker.Faker;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -12,6 +13,11 @@ public class CitiesPage extends BasePage{
     private WebElement creatNameInputField;
     private WebElement saveNewItemBtn;
     private WebElement succesMsgBanner;
+    private WebElement editItemBtn;
+    private WebElement editNameInputField;
+    private Faker faker;
+    private HomePage homePage;
+
 
     public CitiesPage(WebDriver driver, WebDriverWait wait) {
         super(driver, wait);
@@ -26,7 +32,7 @@ public class CitiesPage extends BasePage{
     }
 
     public WebElement getSaveNewItemBtn() {
-        return getDriver().findElement(By.xpath("//*[@id=\"app\"]/div[5]/div/div/div[3]/button[2]"));
+        return getDriver().findElement(By.xpath("//*[@id=\"app\"]/div[4]/div/div/div[3]/button[2]/span"));
     }
 
     public WebElement getCreatNameInputField() {
@@ -35,5 +41,33 @@ public class CitiesPage extends BasePage{
 
     public WebElement getSuccesMsgBanner() {
         return getDriver().findElement(By.xpath("//*[@id=\"app\"]/div[1]/main/div/div[2]/div/div[3]/div/div/div/div/div[1]"));
+    }
+
+    public WebElement getEditItemBtn() {
+        return getDriver().findElement(By.xpath("//*[@id=\"edit\"]/span/i"));
+    }
+
+    public WebElement getEditNameInputField() {
+        return getDriver().findElement(By.xpath("//*[@id=\"name\"]"));
+    }
+
+    public void addNewCity() throws InterruptedException {
+        faker = new Faker();
+        String city = faker.address().city();
+        getCreateItemBtn().click();
+        getCreatNameInputField().click();
+        getCreatNameInputField().sendKeys(city);
+        Thread.sleep(1000);
+        getSaveNewItemBtn().click();
+    }
+
+    public void editCity() {
+        faker = new Faker();
+        String city = faker.address().city();
+        getEditItemBtn().click();
+        getEditNameInputField().click();
+        getEditNameInputField().clear();
+        getEditNameInputField().sendKeys(city);
+        getSaveNewItemBtn().click();
     }
 }
