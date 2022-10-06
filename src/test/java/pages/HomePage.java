@@ -14,7 +14,8 @@ public class HomePage extends BasePage{
     private WebElement language;
     private WebElement logoutBtn;
     private WebElement homePageBtn;
-
+    private WebElement adminBtn;
+    private WebElement citiesBtn;
 
     public HomePage(WebDriver driver, WebDriverWait wait) {
         super(driver, wait);
@@ -46,6 +47,14 @@ public class HomePage extends BasePage{
 
     public WebElement getHomePageBtn() {
         return getDriver().findElement(By.xpath("//*[@id=\"app\"]/div[1]/div/header/div/div[3]/a[1]"));
+    }
+
+    public WebElement getAdminBtn() {
+        return getDriver().findElement(By.xpath("//*[@id=\"app\"]/div[1]/div/header/div/div[3]/button[1]/span"));
+    }
+
+    public WebElement getCitiesBtn() {
+        return getDriver().findElement(By.xpath("//*[@id=\"list-item-117\"]"));
     }
 
     public void goToLoginPage() {

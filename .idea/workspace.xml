@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e47e6f00-b462-4e4e-aaca-97a6f7300a84" name="Changes" comment="Added 2nd test in SignupTests page checking signup form input field types.">
+    <list default="true" id="e47e6f00-b462-4e4e-aaca-97a6f7300a84" name="Changes" comment="Added 3rd and 4th tests, 3rd is verifying that when user tries to creat profile that already exists error message appears while 4th tests verifies successful sign up and that verification message pops up.">
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/CitiesPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/AdminCitiesTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/SignUpPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/SignUpPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/SignUpTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/SignUpTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,8 +42,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true"
   }
 }]]></component>
-  <component name="RunManager">
-    <configuration name="LoginTests.logOut" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.AdminCitiesTest.adminCitiesRoutTest">
+    <configuration name="AdminCitiesTest.adminCitiesRoutTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="itbootcamp_final_project" />
       <extension name="coverage">
         <pattern>
@@ -49,8 +52,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.LoginTests" />
-      <option name="METHOD_NAME" value="logOut" />
+      <option name="MAIN_CLASS_NAME" value="tests.AdminCitiesTest" />
+      <option name="METHOD_NAME" value="adminCitiesRoutTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -132,11 +135,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.AdminCitiesTest.adminCitiesRoutTest" />
         <item itemvalue="TestNG.SignUpTests.signUpTest" />
         <item itemvalue="TestNG.SignUpTests.signUpUserThatAlreadyExists" />
         <item itemvalue="TestNG.SignUpTests.signUpFormInputTypesCheckTest" />
         <item itemvalue="TestNG.SignUpTests.signUpPageTest" />
-        <item itemvalue="TestNG.LoginTests.logOut" />
       </list>
     </recent_temporary>
   </component>
@@ -219,7 +222,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664917093321</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Added 3rd and 4th tests, 3rd is verifying that when user tries to creat profile that already exists error message appears while 4th tests verifies successful sign up and that verification message pops up.">
+      <created>1664918847134</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1664918847134</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -245,6 +255,7 @@
     <MESSAGE value="Added 1st test in signUptest verifying that when user click on signup button url containts &quot;signup&quot;." />
     <MESSAGE value="Added 2nd method checking signup form input field types." />
     <MESSAGE value="Added 2nd test in SignupTests page checking signup form input field types." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added 2nd test in SignupTests page checking signup form input field types." />
+    <MESSAGE value="Added 3rd and 4th tests, 3rd is verifying that when user tries to creat profile that already exists error message appears while 4th tests verifies successful sign up and that verification message pops up." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added 3rd and 4th tests, 3rd is verifying that when user tries to creat profile that already exists error message appears while 4th tests verifies successful sign up and that verification message pops up." />
   </component>
 </project>

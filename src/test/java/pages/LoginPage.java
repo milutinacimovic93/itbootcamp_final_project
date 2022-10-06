@@ -18,7 +18,6 @@ public class LoginPage extends BasePage{
         super(driver, wait);
     }
 
-
     public WebElement getEmailField() {
         return getDriver().findElement(By.id("email"));
     }
