@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e47e6f00-b462-4e4e-aaca-97a6f7300a84" name="Changes" comment="Added AuthRoutesTest with test verifying that guests can not reach home,profile,admin/cities and admin/users pages and that they will be redirected to login page if they try.">
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/ProfilePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/ProfileTests.java" afterDir="false" />
+    <list default="true" id="e47e6f00-b462-4e4e-aaca-97a6f7300a84" name="Changes" comment="Added ProfilePage and ProfileTests with editProfileTest verifying successful profile edit and message appearing.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/ProfilePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/ProfilePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/ProfileTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/ProfileTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -269,7 +268,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665086693244</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Added ProfilePage and ProfileTests with editProfileTest verifying successful profile edit and message appearing.">
+      <created>1665172451061</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1665172451061</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -302,7 +308,8 @@
     <MESSAGE value="Added 4th test verifying that searched city is filtered." />
     <MESSAGE value="Added 5th test verifying successful delete." />
     <MESSAGE value="Added AuthRoutesTest with test verifying that guests can not reach home,profile,admin/cities and admin/users pages and that they will be redirected to login page if they try." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added AuthRoutesTest with test verifying that guests can not reach home,profile,admin/cities and admin/users pages and that they will be redirected to login page if they try." />
+    <MESSAGE value="Added ProfilePage and ProfileTests with editProfileTest verifying successful profile edit and message appearing." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added ProfilePage and ProfileTests with editProfileTest verifying successful profile edit and message appearing." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

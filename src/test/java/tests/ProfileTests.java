@@ -60,7 +60,7 @@ public class ProfileTests extends BaseTest{
         Assert.assertEquals(actualLinkedin, linkedin);
         Thread.sleep(2000);
         profilePage.getSaveBtn().click();
-        Thread.sleep(5000);
-        Assert.assertEquals(profilePage.getSavedMsg().getText(), "Profile saved successfuly");
+        Thread.sleep(2000);
+        Assert.assertTrue(profilePage.getSavedMsg().getText().contains("Profile saved successfuly"));
     }
 }

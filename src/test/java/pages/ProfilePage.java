@@ -62,7 +62,7 @@ public class ProfilePage extends BasePage {
     }
 
     public WebElement getSavedMsg() {
-        return getDriver().findElement(By.xpath("//*[@id='app']/div[1]/main/div/div[2]/div/div/div[4]/div/div/div/div"));
+        return getDriver().findElement(By.xpath("//*[@id=\"app\"]/div[1]/main/div/div[2]/div/div/div[4]/div/div/div/div/div[1]"));
     }
 
     public void editProfile(String name, String phone, String twitter, String linkedin) {
