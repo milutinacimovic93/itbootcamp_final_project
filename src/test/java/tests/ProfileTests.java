@@ -1,16 +1,6 @@
 package tests;
 
-//Test #1: Edits profile
-//Podaci: random podaci korišćenjem faker library-ja
-//assert:
-//Verifikovati da je prikazana poruka Profile saved successfuly
-//Verifikovati da svaki input sada za value atribut ima vrednost koja
-//je uneta u okviru forme
-
-
 import com.github.javafaker.Faker;
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;

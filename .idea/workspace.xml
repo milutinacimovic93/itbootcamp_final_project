@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e47e6f00-b462-4e4e-aaca-97a6f7300a84" name="Changes" comment="Added ProfilePage and ProfileTests with editProfileTest verifying successful profile edit and message appearing.">
+    <list default="true" id="e47e6f00-b462-4e4e-aaca-97a6f7300a84" name="Changes" comment="Fixed assert verifying &quot;Profile saved successfuly&quot; is displayed after clicking on save button in editProfileTest.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/ProfilePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/ProfilePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/SignUpPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/SignUpPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/ProfileTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/ProfileTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/SignUpTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/SignUpTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,24 +41,6 @@
   }
 }</component>
   <component name="RunManager">
-    <configuration name="AdminCitiesTest.editCityTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="itbootcamp_final_project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.AdminCitiesTest" />
-      <option name="METHOD_NAME" value="editCityTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="LocaleLanguageTests.engLangTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="itbootcamp_final_project" />
       <extension name="coverage">
@@ -69,24 +52,6 @@
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.LocaleLanguageTests" />
       <option name="METHOD_NAME" value="engLangTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LocaleLanguageTests.espLangTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="itbootcamp_final_project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.LocaleLanguageTests" />
-      <option name="METHOD_NAME" value="espLangTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -130,13 +95,49 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SignUpTests.signUpTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="itbootcamp_final_project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.SignUpTests" />
+      <option name="METHOD_NAME" value="signUpTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SignUpTests.signUpUserThatAlreadyExists" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="itbootcamp_final_project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.SignUpTests" />
+      <option name="METHOD_NAME" value="signUpUserThatAlreadyExists" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.SignUpTests.signUpUserThatAlreadyExists" />
+        <item itemvalue="TestNG.SignUpTests.signUpTest" />
         <item itemvalue="TestNG.ProfileTests.editProfileTest" />
         <item itemvalue="TestNG.LocaleLanguageTests.fraLangTest" />
         <item itemvalue="TestNG.LocaleLanguageTests.engLangTest" />
-        <item itemvalue="TestNG.LocaleLanguageTests.espLangTest" />
-        <item itemvalue="TestNG.AdminCitiesTest.editCityTest" />
       </list>
     </recent_temporary>
   </component>
@@ -275,7 +276,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665172451061</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Fixed assert verifying &quot;Profile saved successfuly&quot; is displayed after clicking on save button in editProfileTest.">
+      <created>1665176439575</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1665176439575</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -309,17 +317,7 @@
     <MESSAGE value="Added 5th test verifying successful delete." />
     <MESSAGE value="Added AuthRoutesTest with test verifying that guests can not reach home,profile,admin/cities and admin/users pages and that they will be redirected to login page if they try." />
     <MESSAGE value="Added ProfilePage and ProfileTests with editProfileTest verifying successful profile edit and message appearing." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added ProfilePage and ProfileTests with editProfileTest verifying successful profile edit and message appearing." />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/tests/SignUpTests.java</url>
-          <line>85</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Fixed assert verifying &quot;Profile saved successfuly&quot; is displayed after clicking on save button in editProfileTest." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed assert verifying &quot;Profile saved successfuly&quot; is displayed after clicking on save button in editProfileTest." />
   </component>
 </project>

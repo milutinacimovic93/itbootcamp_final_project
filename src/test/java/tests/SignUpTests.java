@@ -50,17 +50,8 @@ public class SignUpTests extends BaseTest{
     @Test(priority = 3)
     public void signUpUserThatAlreadyExists() throws InterruptedException {
         homePage.goToSignUpPage();
-        Thread.sleep(1000);
-        signUpPage.getName().click();
-        signUpPage.getName().sendKeys("Test Test");
-        signUpPage.getEmail().click();
-        signUpPage.getEmail().sendKeys("admin@admin.com");
-        signUpPage.getPasswordField().click();
-        signUpPage.getPasswordField().sendKeys("12345");
-        signUpPage.getConfirmPasswordField().click();
-        signUpPage.getConfirmPasswordField().sendKeys("12345");
-        signUpPage.getSignMeUpBtn().click();
-        Thread.sleep(1000);
+        signUpPage.signUp("Test Test", "admin@admin.com", "12345", "12345");
+        Thread.sleep(3000);
         WebElement errorMsg = driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/main/div/div[2]/div/div/div[3]/div/div/div/div/div[1]"));
         String errorMsgTxt = errorMsg.getText();
         Assert.assertTrue(errorMsgTxt.contains("E-mail already exists"));
@@ -71,15 +62,7 @@ public class SignUpTests extends BaseTest{
     public void signUpTest() throws InterruptedException {
         homePage.goToSignUpPage();
         Thread.sleep(1000);
-        signUpPage.getName().click();
-        signUpPage.getName().sendKeys("Milutin Acimovic");
-        signUpPage.getEmail().click();
-        signUpPage.getEmail().sendKeys("milutinn.acimovicc@itbootcamp.rs");
-        signUpPage.getPasswordField().click();
-        signUpPage.getPasswordField().sendKeys("12345");
-        signUpPage.getConfirmPasswordField().click();
-        signUpPage.getConfirmPasswordField().sendKeys("12345");
-        signUpPage.getSignMeUpBtn().click();
+        signUpPage.signUp("Milutin Acimovic", "milutinn.acimovicc@itbootcamp.rs", "12345", "12345");
         Thread.sleep(1000);
         WebElement verifyMsg = driver.findElement(By.xpath("//*[@id=\"app\"]/div[4]/div/div"));
         String verifyMsgTxt = verifyMsg.getText();

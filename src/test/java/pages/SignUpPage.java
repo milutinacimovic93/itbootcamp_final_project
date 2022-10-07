@@ -37,5 +37,15 @@ public class SignUpPage extends BasePage{
         return getDriver().findElement(By.xpath("//*[@id=\"app\"]/div/main/div/div[2]/div/div/div[2]/span/form/div/div[5]/button"));
     }
 
-    public void signUp() {}
+    public void signUp(String name, String email, String password, String confirmPassword) {
+        getName().click();
+        getName().sendKeys(name);
+        getEmail().click();
+        getEmail().sendKeys(email);
+        getPasswordField().click();
+        getPasswordField().sendKeys(password);
+        getConfirmPasswordField().click();
+        getConfirmPasswordField().sendKeys(confirmPassword);
+        getSignMeUpBtn().click();
+    }
 }
