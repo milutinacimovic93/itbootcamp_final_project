@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e47e6f00-b462-4e4e-aaca-97a6f7300a84" name="Changes" comment="Added AuthRoutesTest with test verifying that guests can not reach home,profile,admin/cities and admin/users pages and that they will be redirected to login page if they try.">
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/LocaleLanguageTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/ProfilePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/ProfileTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" afterDir="false" />
     </list>
@@ -33,12 +34,12 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="AdminCitiesTest.editCityTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="itbootcamp_final_project" />
@@ -51,24 +52,6 @@
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.AdminCitiesTest" />
       <option name="METHOD_NAME" value="editCityTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AdminCitiesTest.searchCityTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="itbootcamp_final_project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.AdminCitiesTest" />
-      <option name="METHOD_NAME" value="searchCityTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -130,13 +113,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ProfileTests.editProfileTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="itbootcamp_final_project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.ProfileTests" />
+      <option name="METHOD_NAME" value="editProfileTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.ProfileTests.editProfileTest" />
         <item itemvalue="TestNG.LocaleLanguageTests.fraLangTest" />
         <item itemvalue="TestNG.LocaleLanguageTests.engLangTest" />
         <item itemvalue="TestNG.LocaleLanguageTests.espLangTest" />
         <item itemvalue="TestNG.AdminCitiesTest.editCityTest" />
-        <item itemvalue="TestNG.AdminCitiesTest.searchCityTest" />
       </list>
     </recent_temporary>
   </component>

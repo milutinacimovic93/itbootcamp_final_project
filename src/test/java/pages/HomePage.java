@@ -22,6 +22,7 @@ public class HomePage extends BasePage{
     private WebElement pageHeader;
     private WebElement engBtn;
     private WebElement fraBtn;
+    private WebElement profileBtn;
 
     public HomePage(WebDriver driver, WebDriverWait wait) {
         super(driver, wait);
@@ -83,6 +84,10 @@ public class HomePage extends BasePage{
         return getDriver().findElement(By.xpath("//*[@id=\"app\"]/div[1]/main/div/div[2]/div/div[1]/div[1]/h1"));
     }
 
+    public WebElement getProfileBtn() {
+        return getDriver().findElement(By.xpath("//*[@id=\"app\"]/div[1]/div/header/div/div[3]/a[3]"));
+    }
+
     public void goToLoginPage() {
         getDriver().get("https://vue-demo.daniel-avellaneda.com/");
         getLoginBtn().click();
@@ -100,11 +105,8 @@ public class HomePage extends BasePage{
         Thread.sleep(2000);
     }
 
-
-
-
-
-
-
+    public void goToProfilePage() {
+        getProfileBtn().click();
+    }
 
 }
