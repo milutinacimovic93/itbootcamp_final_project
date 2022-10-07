@@ -40,7 +40,7 @@ public class AdminCitiesTest extends BaseTest {
     @Test(priority = 1)
     public void adminCitiesRoutTest() throws InterruptedException {
         homePage.goToLoginPage();
-        loginPage.login();
+        loginPage.login("admin@admin.com", "12345");
         Thread.sleep(2000);
         homePage.getAdminBtn().click();
         Thread.sleep(2000);
@@ -56,7 +56,7 @@ public class AdminCitiesTest extends BaseTest {
     @Test(priority = 2)
     public void addNewCityTest() throws InterruptedException {
         homePage.goToLoginPage();
-        loginPage.login();
+        loginPage.login("admin@admin.com", "12345");
         Thread.sleep(3000);
         homePage.goToCitiesPage();
         Thread.sleep(2000);
@@ -69,7 +69,7 @@ public class AdminCitiesTest extends BaseTest {
     @Test(priority = 3)
     public void editCityTest() throws InterruptedException {
         homePage.goToLoginPage();
-        loginPage.login();
+        loginPage.login("admin@admin.com", "12345");
         Thread.sleep(2000);
         homePage.goToCitiesPage();
         Thread.sleep(2000);
@@ -82,7 +82,7 @@ public class AdminCitiesTest extends BaseTest {
     @Test(priority = 4)
     public void searchCityTest() throws InterruptedException {
         homePage.goToLoginPage();
-        loginPage.login();
+        loginPage.login("admin@admin.com", "12345");
         Thread.sleep(2000);
         homePage.goToCitiesPage();
         Thread.sleep(2000);
@@ -96,7 +96,7 @@ public class AdminCitiesTest extends BaseTest {
     public void deleteCity() throws InterruptedException {
         homePage.goToLoginPage();
         Thread.sleep(2000);
-        loginPage.login();
+        loginPage.login("admin@admin.com", "12345");
         Thread.sleep(2000);
         homePage.goToCitiesPage();
         citiesPage.deleteCity();

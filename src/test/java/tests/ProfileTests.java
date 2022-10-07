@@ -35,7 +35,7 @@ public class ProfileTests extends BaseTest{
         String linkedin = "http://" + faker.internet().url();
         homePage.goToLoginPage();
         Thread.sleep(2000);
-        loginPage.login();
+        loginPage.login("admin@admin.com", "12345");
         homePage.goToProfilePage();
         Thread.sleep(2000);
         profilePage.editProfile(name, phone, twitter, linkedin);

@@ -33,7 +33,7 @@ public class LoginTests extends BaseTest{
     public void loginTest() throws InterruptedException {
         homePage.goToLoginPage();
         Thread.sleep(1000);
-        loginPage.login();
+        loginPage.login("admin@admin.com", "12345");
         String actualUrl = driver.getCurrentUrl();
         Assert.assertTrue(actualUrl.contains("login"));
     }
@@ -53,11 +53,7 @@ public class LoginTests extends BaseTest{
         homePage.goToLoginPage();
         String email = faker.internet().emailAddress();
         String password = faker.internet().password();
-        loginPage.getEmailField().click();
-        loginPage.getEmailField().sendKeys(email);
-        loginPage.getPasswordField().click();
-        loginPage.getPasswordField().sendKeys(password);
-        loginPage.getLoginBtn().click();
+        loginPage.login(email, password);
         Thread.sleep(3000);
         WebElement userDoesNotExist = driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/main/div/div[2]/div/div/div[4]/div/div/div/div/div[1]"));
         Assert.assertTrue(userDoesNotExist.isDisplayed());
@@ -86,7 +82,7 @@ public class LoginTests extends BaseTest{
     public void logInTest() throws InterruptedException {
         homePage.goToLoginPage();
         Thread.sleep(1000);
-        loginPage.login();
+        loginPage.login("admin@admin.com", "12345");
         Thread.sleep(1000);
         String actualUrl = driver.getCurrentUrl();
         Assert.assertTrue(actualUrl.contains("home"));
@@ -98,7 +94,7 @@ public class LoginTests extends BaseTest{
         Thread.sleep(1000);
         homePage.goToLoginPage();
         Thread.sleep(1000);
-        loginPage.login();
+        loginPage.login("admin@admin.com", "12345");
         String actualUrl = driver.getCurrentUrl();
         Assert.assertTrue(actualUrl.contains("login"));
         Assert.assertTrue(homePage.getLogoutBtn().isDisplayed());

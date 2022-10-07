@@ -59,11 +59,11 @@ public class LoginPage extends BasePage{
         return getDriver().findElement(By.xpath("//*[@id=\"app\"]/div[1]/div/header/div/div[3]/button[2]"));
     }
 
-    public void login() {
+    public void login(String email, String password) {
         getEmailField().click();
-        getEmailField().sendKeys("admin@admin.com");
+        getEmailField().sendKeys(email);
         getPasswordField().click();
-        getPasswordField().sendKeys("12345");
+        getPasswordField().sendKeys(password);
         getLoginBtn().click();
     }
 
