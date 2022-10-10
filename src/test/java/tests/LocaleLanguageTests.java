@@ -18,7 +18,7 @@ public class LocaleLanguageTests extends BaseTest{
     }
 
     @Test
-    public void espLangTest() throws InterruptedException {
+    public void espLangTest() {
         homePage.getLanguageBtn().click();
         homePage.getSpainBtn().click();
         String expectedResult = "Página de aterrizaje";
@@ -27,7 +27,7 @@ public class LocaleLanguageTests extends BaseTest{
     }
 
     @Test
-    public void engLangTest() throws InterruptedException {
+    public void engLangTest() {
         homePage.getLanguageBtn().click();
         homePage.getEngBtn().click();
         String expectedResult = "Landing";
@@ -36,7 +36,7 @@ public class LocaleLanguageTests extends BaseTest{
     }
 
     @Test
-    public void fraLangTest() throws InterruptedException {
+    public void fraLangTest() {
         homePage.getLanguageBtn().click();
         homePage.getFranBtn().click();
         String expectedResult = "Page d'atterrissage";
