@@ -62,7 +62,7 @@ public class SignUpTests extends BaseTest{
     public void signUpTest() throws InterruptedException {
         homePage.goToSignUpPage();
         Thread.sleep(1000);
-        signUpPage.signUp("Milutin Acimovic", "milutinn199.acimovicc@itbootcamp.rs", "12345", "12345");
+        signUpPage.signUp("Milutin Acimovic", "milutin.acimovic1993@itbootcamp.rs", "12345", "12345");
         Thread.sleep(1000);
         WebElement verifyMsg = driver.findElement(By.xpath("//*[@id=\"app\"]/div[4]/div/div"));
         String verifyMsgTxt = verifyMsg.getText();
