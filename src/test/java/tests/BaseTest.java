@@ -23,14 +23,6 @@ public abstract class BaseTest {
         this.driverWait = driverWait;
     }
 
-    public WebDriver getDriver() {
-        return driver;
-    }
-
-    public WebDriverWait getDriverWait() {
-        return driverWait;
-    }
-
     @BeforeClass
     public void setup() {
         System.setProperty("webdriver.chrome.driver", "C://Users//ROG//IdeaProjects/chromedriver.exe");

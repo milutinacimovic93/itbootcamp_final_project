@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e47e6f00-b462-4e4e-aaca-97a6f7300a84" name="Changes" comment="Fixed LoginPage login method, and also changed tests on LoginTests page.">
+    <list default="true" id="e47e6f00-b462-4e4e-aaca-97a6f7300a84" name="Changes" comment="Added changes with waiters replacing thread sleaps. And also deleted priority for tests.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/AuthRoutesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/AuthRoutesTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/LocaleLanguageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/LocaleLanguageTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/LoginTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/ProfileTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/ProfileTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/SignUpTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/SignUpTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +41,7 @@
   }
 }</component>
   <component name="RunManager">
-    <configuration name="LoginTests.logInTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="AdminCitiesTest.addNewCityTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="itbootcamp_final_project" />
       <extension name="coverage">
         <pattern>
@@ -52,8 +50,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.LoginTests" />
-      <option name="METHOD_NAME" value="logInTest" />
+      <option name="MAIN_CLASS_NAME" value="tests.AdminCitiesTest" />
+      <option name="METHOD_NAME" value="addNewCityTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -61,7 +59,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTests.logOutTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="AdminCitiesTest.adminCitiesRoutTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="itbootcamp_final_project" />
       <extension name="coverage">
         <pattern>
@@ -70,8 +68,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.LoginTests" />
-      <option name="METHOD_NAME" value="logOutTest" />
+      <option name="MAIN_CLASS_NAME" value="tests.AdminCitiesTest" />
+      <option name="METHOD_NAME" value="adminCitiesRoutTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -79,7 +77,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTests.noUserErrorTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="AdminCitiesTest.editCityTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="itbootcamp_final_project" />
       <extension name="coverage">
         <pattern>
@@ -88,8 +86,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.LoginTests" />
-      <option name="METHOD_NAME" value="noUserErrorTest" />
+      <option name="MAIN_CLASS_NAME" value="tests.AdminCitiesTest" />
+      <option name="METHOD_NAME" value="editCityTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -97,7 +95,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTests.wrongPasswordTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="AdminCitiesTest.searchCityTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="itbootcamp_final_project" />
       <extension name="coverage">
         <pattern>
@@ -106,8 +104,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.LoginTests" />
-      <option name="METHOD_NAME" value="wrongPasswordTest" />
+      <option name="MAIN_CLASS_NAME" value="tests.AdminCitiesTest" />
+      <option name="METHOD_NAME" value="searchCityTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -115,7 +113,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProfileTests.editProfileTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SignUpTests.signUpTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="itbootcamp_final_project" />
       <extension name="coverage">
         <pattern>
@@ -124,8 +122,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.ProfileTests" />
-      <option name="METHOD_NAME" value="editProfileTest" />
+      <option name="MAIN_CLASS_NAME" value="tests.SignUpTests" />
+      <option name="METHOD_NAME" value="signUpTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -135,11 +133,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.ProfileTests.editProfileTest" />
-        <item itemvalue="TestNG.LoginTests.wrongPasswordTest" />
-        <item itemvalue="TestNG.LoginTests.noUserErrorTest" />
-        <item itemvalue="TestNG.LoginTests.logOutTest" />
-        <item itemvalue="TestNG.LoginTests.logInTest" />
+        <item itemvalue="TestNG.AdminCitiesTest.adminCitiesRoutTest" />
+        <item itemvalue="TestNG.AdminCitiesTest.searchCityTest" />
+        <item itemvalue="TestNG.AdminCitiesTest.editCityTest" />
+        <item itemvalue="TestNG.AdminCitiesTest.addNewCityTest" />
+        <item itemvalue="TestNG.SignUpTests.signUpTest" />
       </list>
     </recent_temporary>
   </component>
@@ -299,7 +297,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665182129959</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Added changes with waiters replacing thread sleaps. And also deleted priority for tests.">
+      <created>1665428695573</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1665428695573</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -336,6 +341,7 @@
     <MESSAGE value="Fixed assert verifying &quot;Profile saved successfuly&quot; is displayed after clicking on save button in editProfileTest." />
     <MESSAGE value="Fixed SignUpPage signup method, and also changed tests on SignUpTests page." />
     <MESSAGE value="Fixed LoginPage login method, and also changed tests on LoginTests page." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed LoginPage login method, and also changed tests on LoginTests page." />
+    <MESSAGE value="Added changes with waiters replacing thread sleaps. And also deleted priority for tests." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added changes with waiters replacing thread sleaps. And also deleted priority for tests." />
   </component>
 </project>
